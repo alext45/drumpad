@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/snareButton"
+        android:layout_width="250dp"
+        android:layout_height="150dp"
+
+        android:text="SNARE"
+        app:layout_constraintEnd_toStartOf="@+id/crashButton"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/crashButton"
+        android:background="@drawable/button_default"
+        android:backgroundTint="#FF9800"/>
+
+    <Button
+        android:id="@+id/hatButton"
+        android:layout_width="250dp"
+        android:layout_height="150dp"
+        android:text="HIGH HAT"
+        app:layout_constraintEnd_toStartOf="@+id/bassButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/bassButton"
+        android:background="@drawable/button_default"
+        android:backgroundTint="#0000DD"/>
+
+    <Button
+        android:id="@+id/crashButton"
+        android:layout_width="250dp"
+        android:layout_height="150dp"
+        android:text="SYMBOL"
+        app:layout_constraintBottom_toTopOf="@+id/bassButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/snareButton"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/button_default"
+        android:backgroundTint="#00ff00"/>
+
+    <Button
+        android:id="@+id/bassButton"
+        android:layout_width="250dp"
+        android:layout_height="150dp"
+        android:text="BASS"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/hatButton"
+        app:layout_constraintTop_toBottomOf="@+id/crashButton"
+        android:background="@drawable/button_default"
+        android:backgroundTint="#EC0707"
+        />
+
+    <ImageView
+        android:id="@+id/btConnect"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_baseline_bluetooth_24"
+        tools:ignore="VectorDrawableCompat" />
+</androidx.constraintlayout.widget.ConstraintLayout>
